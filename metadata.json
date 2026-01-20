@@ -1,0 +1,8 @@
+
+{
+  "name": "LegacyVault",
+  "description": "A comprehensive estate planning and heir asset management platform. Securely aggregate financial accounts, manage legal documents, and designate heirs to ensure a seamless wealth transfer.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
