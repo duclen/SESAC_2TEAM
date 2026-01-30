@@ -13,7 +13,8 @@ dist-ssr
 *.local
 
 # CODEF Certificates and Secrets - NEVER COMMIT
-certs/
+certs/dev/
+certs/prod/
 *.pem
 *.key
 *.p12
