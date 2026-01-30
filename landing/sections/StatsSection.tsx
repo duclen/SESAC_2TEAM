@@ -21,10 +21,10 @@ const StatItem: React.FC<StatItemProps> = ({ value, suffix, label, delay = 0 }) 
       }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
-      <div className="text-5xl md:text-6xl font-bold text-slate-900 mb-2 stat-number">
+      <div className="text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-2 stat-number">
         {count.toLocaleString()}{suffix}
       </div>
-      <p className="text-slate-600 text-lg">{label}</p>
+      <p className="text-neutral-500 text-lg">{label}</p>
     </div>
   );
 };
@@ -40,7 +40,7 @@ const StatsSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 md:py-32 bg-white">
+    <section className="py-24 md:py-32 bg-neutral-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div
@@ -49,11 +49,11 @@ const StatsSection: React.FC = () => {
             titleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <span className="text-indigo-600 font-semibold mb-4 block">신뢰</span>
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+          <span className="text-neutral-400 font-medium mb-4 block uppercase tracking-widest text-sm">Trust</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6">
             숫자로 증명하는 신뢰
           </h2>
-          <p className="text-xl text-slate-600">
+          <p className="text-lg md:text-xl text-neutral-500">
             수많은 가족들이 LegacyVault를 통해 소중한 자산을 관리하고 있습니다.
           </p>
         </div>

@@ -23,21 +23,21 @@ const LandingHeader: React.FC = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center">
+            <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">L</span>
             </div>
-            <span className="text-xl font-bold text-slate-900">LegacyVault</span>
+            <span className="text-xl font-bold text-black">LegacyVault</span>
           </Link>
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-slate-600 hover:text-slate-900 font-medium transition-colors">
+            <a href="#features" className="text-neutral-500 hover:text-black font-medium transition-colors line-reveal">
               기능
             </a>
-            <a href="#how-it-works" className="text-slate-600 hover:text-slate-900 font-medium transition-colors">
+            <a href="#how-it-works" className="text-neutral-500 hover:text-black font-medium transition-colors line-reveal">
               이용방법
             </a>
-            <a href="#testimonials" className="text-slate-600 hover:text-slate-900 font-medium transition-colors">
+            <a href="#testimonials" className="text-neutral-500 hover:text-black font-medium transition-colors line-reveal">
               후기
             </a>
           </div>
@@ -46,13 +46,13 @@ const LandingHeader: React.FC = () => {
           <div className="flex items-center gap-3">
             <Link
               to="/app"
-              className="hidden sm:inline-flex px-4 py-2 text-slate-600 font-medium hover:text-slate-900 transition-colors"
+              className="hidden sm:inline-flex px-4 py-2 text-neutral-500 font-medium hover:text-black transition-colors"
             >
               로그인
             </Link>
             <Link
               to="/app"
-              className="px-5 py-2.5 bg-slate-900 text-white font-semibold rounded-xl hover:bg-slate-800 transition-colors"
+              className="px-5 py-2.5 bg-black text-white font-semibold rounded-full hover:bg-neutral-800 transition-colors"
             >
               무료로 시작하기
             </Link>

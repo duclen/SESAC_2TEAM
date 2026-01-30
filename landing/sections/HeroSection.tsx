@@ -9,39 +9,39 @@ const HeroSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden hero-pattern">
-      {/* Background Decoration */}
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-white">
+      {/* Background Decoration - Subtle Achromatic */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-96 h-96 bg-indigo-200 rounded-full opacity-30 blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-purple-200 rounded-full opacity-30 blur-3xl" />
+        <div className="absolute -top-40 -right-40 w-96 h-96 bg-neutral-100 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-neutral-200 rounded-full opacity-40 blur-3xl" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 py-32 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           {/* Badge */}
           <div
-            className={`inline-flex items-center gap-2 px-4 py-2 bg-indigo-50 rounded-full mb-8 transition-all duration-700 ${
+            className={`inline-flex items-center gap-2 px-4 py-2 bg-neutral-100 rounded-full mb-8 transition-all duration-700 ${
               isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
-            <span className="w-2 h-2 bg-indigo-500 rounded-full animate-pulse" />
-            <span className="text-indigo-700 text-sm font-medium">AI 기반 유산 관리 서비스</span>
+            <span className="w-2 h-2 bg-black rounded-full animate-pulse" />
+            <span className="text-neutral-700 text-sm font-medium">AI 기반 유산 관리 서비스</span>
           </div>
 
           {/* Main Headline */}
           <h1
-            className={`text-5xl md:text-7xl font-bold leading-tight mb-6 transition-all duration-700 delay-100 ${
+            className={`text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 transition-all duration-700 delay-100 ${
               isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >
-            <span className="text-slate-900">유산을</span>
+            <span className="text-black">유산을</span>
             <br />
             <span className="gradient-text">더 똑똑하게</span>
           </h1>
 
           {/* Subtitle */}
           <p
-            className={`text-xl md:text-2xl text-slate-600 mb-12 leading-relaxed transition-all duration-700 delay-200 ${
+            className={`text-lg md:text-xl lg:text-2xl text-neutral-500 mb-12 leading-relaxed transition-all duration-700 delay-200 ${
               isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >
@@ -57,13 +57,13 @@ const HeroSection: React.FC = () => {
           >
             <Link
               to="/app"
-              className="w-full sm:w-auto px-8 py-4 bg-slate-900 text-white font-semibold rounded-2xl hover:bg-slate-800 transition-all btn-glow text-lg"
+              className="w-full sm:w-auto px-8 py-4 bg-black text-white font-semibold rounded-full hover:bg-neutral-800 transition-all btn-glow text-lg"
             >
               무료로 시작하기
             </Link>
             <a
               href="#features"
-              className="w-full sm:w-auto px-8 py-4 bg-white text-slate-700 font-semibold rounded-2xl border-2 border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all text-lg"
+              className="w-full sm:w-auto px-8 py-4 bg-white text-black font-semibold rounded-full border border-neutral-200 hover:border-neutral-400 hover:bg-neutral-50 transition-all text-lg"
             >
               서비스 둘러보기
             </a>
@@ -71,7 +71,7 @@ const HeroSection: React.FC = () => {
 
           {/* Trust Indicators */}
           <div
-            className={`mt-16 flex flex-wrap items-center justify-center gap-8 text-slate-400 transition-all duration-700 delay-500 ${
+            className={`mt-16 flex flex-wrap items-center justify-center gap-8 text-neutral-400 transition-all duration-700 delay-500 ${
               isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >
@@ -99,7 +99,7 @@ const HeroSection: React.FC = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <svg className="w-6 h-6 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-neutral-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
         </svg>
       </div>
