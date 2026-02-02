@@ -35,11 +35,8 @@ const LandingHeader: React.FC = () => {
       <nav className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">L</span>
-            </div>
-            <span className="text-xl font-bold text-black">LegacyVault</span>
+          <Link to="/" className="flex items-center">
+            <img src="/sangsokidda.png" alt="상속잇다" className="h-10" />
           </Link>
 
           {/* Navigation Links */}

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Routes, Route, useSearchParams } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
+import RoleSelectPage from './pages/RoleSelectPage';
+import OwnerDashboardPage from './pages/OwnerDashboardPage';
 import DashboardPage from './pages/DashboardPage';
 import CallbackPage from './pages/CallbackPage';
 
@@ -20,6 +22,8 @@ const App: React.FC = () => {
     <Routes>
       <Route path="/" element={<RootRoute />} />
       <Route path="/callback" element={<CallbackPage />} />
+      <Route path="/select-role" element={<RoleSelectPage />} />
+      <Route path="/owner/*" element={<OwnerDashboardPage />} />
       <Route path="/app/*" element={<DashboardPage />} />
     </Routes>
   );

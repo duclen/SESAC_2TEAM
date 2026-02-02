@@ -136,13 +136,13 @@ const featuresData: Record<string, FeatureData> = {
     id: 'security',
     title: '최고 수준 보안',
     subtitle: '철통같은 자산 보호',
-    description: 'TLS 1.3, 256-bit AES 암호화, 다중 인증으로 자산 정보를 철저히 보호합니다. 금융보안원 인증을 받은 시스템으로 안심하고 사용하세요.',
+    description: 'TLS 1.3, 256-bit AES 암호화, 다중 인증으로 자산 정보를 철저히 보호합니다. 금융결제원 인증을 받은 시스템으로 안심하고 사용하세요.',
     benefits: [
       'TLS 1.3 최신 암호화 프로토콜',
       '256-bit AES 데이터 암호화',
       '생체인증 및 OTP 다중 인증',
       '이상 접근 탐지 및 차단',
-      '금융보안원 보안 인증 획득',
+      '금융결제원 보안 인증 획득',
     ],
     howItWorks: [
       { step: 1, title: '계정 보호', description: '강력한 비밀번호와 다중 인증을 설정합니다.' },
@@ -194,11 +194,8 @@ const FeatureDetailPage: React.FC = () => {
       <header className="fixed top-0 left-0 right-0 z-50 nav-blur">
         <nav className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">L</span>
-              </div>
-              <span className="text-xl font-bold text-black">LegacyVault</span>
+            <Link to="/" className="flex items-center">
+              <img src="/sangsokidda.png" alt="상속잇다" className="h-10" />
             </Link>
             <div className="flex items-center gap-4">
               <Link
@@ -372,7 +369,7 @@ const FeatureDetailPage: React.FC = () => {
       {/* Footer */}
       <footer className="py-8 px-6 border-t border-neutral-100">
         <div className="max-w-4xl mx-auto flex justify-between items-center">
-          <p className="text-neutral-500 text-sm">© 2024 LegacyVault</p>
+          <p className="text-neutral-500 text-sm">© 2026 상속잇다</p>
           <Link to="/" className="text-neutral-500 hover:text-black transition-colors text-sm">
             홈으로
           </Link>

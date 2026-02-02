@@ -1,11 +1,25 @@
 
 export enum AccountCategory {
+  // 기존 카테고리
   CHECKING = 'Checking',
   SAVINGS = 'Savings',
   INVESTMENT = 'Investment',
   RETIREMENT = 'Retirement',
   REAL_ESTATE = 'Real Estate',
-  OTHER = 'Other'
+  OTHER = 'Other',
+  // 한국 상속 자산 카테고리
+  TAX = '세금',
+  FINANCE = '금융',
+  BUILDING = '건축물',
+  MUTUAL_AID = '공제회',
+  PENSION = '연금',
+  HEALTH_INSURANCE = '건강보험',
+  NATIONAL_PENSION = '국민연금',
+  EMPLOYMENT_INSURANCE = '고용보험',
+  INDUSTRIAL_ACCIDENT = '산재보험',
+  VEHICLE = '자동차',
+  FISHING_VESSEL = '어선',
+  LAND = '토지'
 }
 
 export interface Account {

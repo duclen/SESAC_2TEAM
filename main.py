@@ -7,10 +7,16 @@ import os
 from dotenv import load_dotenv
 from urllib.parse import urlencode
 
+# 라우터 임포트
+from app.api.inheritance_tax import router as inheritance_tax_router
+
 # 환경 변수 로드
 load_dotenv()
 
 app = FastAPI()
+
+# 라우터 등록
+app.include_router(inheritance_tax_router)
 
 # CORS 설정 (Vite 개발 서버용)
 app.add_middleware(

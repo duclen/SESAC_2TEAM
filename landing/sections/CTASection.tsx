@@ -30,7 +30,7 @@ const CTASection: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              to="/app"
+              to="/select-role"
               className="w-full sm:w-auto px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-neutral-100 transition-all text-lg"
             >
               무료로 시작하기

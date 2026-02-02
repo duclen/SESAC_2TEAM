@@ -8,11 +8,8 @@ const LandingFooter: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-black font-bold text-lg">L</span>
-              </div>
-              <span className="text-xl font-bold">LegacyVault</span>
+            <Link to="/" className="flex items-center mb-4">
+              <img src="/sangsokidda.png" alt="상속잇다" className="h-10 brightness-0 invert" />
             </Link>
             <p className="text-neutral-400 text-sm leading-relaxed">
               소중한 자산을 안전하게 관리하고,<br />
@@ -56,7 +53,7 @@ const LandingFooter: React.FC = () => {
         {/* Bottom */}
         <div className="border-t border-neutral-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-neutral-500 text-sm">
-            © 2024 LegacyVault. All rights reserved.
+            © 2026 상속잇다. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-neutral-500 hover:text-white transition-colors">
